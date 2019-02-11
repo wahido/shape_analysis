@@ -1,0 +1,277 @@
+\usepackage[francais,german]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphpap,
+		latexsym,
+		color,
+		amssymb,
+		graphicx,
+		amsfonts,
+		enumerate,
+		longtable,
+		lscape,
+		afterpage,
+		xspace,
+		}
+
+\usepackage[hyphens,allowmove,obeyspaces%,T1
+            ]{url} % allows breaks behind hyphens
+
+% must be here as it needs to be behind the other includes
+\usepackage[a4paper,
+		twoside=true,
+		headheight=2cm,
+		text={16.15cm,26cm}]{geometry}
+
+\usepackage[pdftitle={Kommentiertes Vorlesungsverzeichnis WS 2015/16},
+		breaklinks=true,
+% 		bookmarks=true,
+% 	 	bookmarksnumbered, 
+		bookmarksopen=true,
+% 		bookmarksopenlevel=1,
+		colorlinks=true,
+		linkcolor=black,  % Farbe der Links (black,red,green,blue,...)
+% 		a4paper,
+		pdffitwindow=true,
+		pdfpagelayout=SinglePage,
+% 		dvips,
+		pdftex, % so wird link aktiv in pdf-Datei
+	   ]{hyperref}
+
+\setlength{\parindent}{0pt}
+
+\frenchspacing
+
+%% Definition der Strukturen %%
+%
+\newcommand{\chapter}[1]{{%
+    \cleardoublepage%
+    %~\vfill
+    ~\\[40ex]
+    {\Huge\bfseries\centerline{#1}}\par\nobreak
+    %~\vfill
+    \phantomsection\addcontentsline{toc}{section}{#1}
+       \newpage
+}}
+%
+\newcommand{\btabt}{\large%
+      \noindent\begin{tabular}{@{}p{3.8cm}@{~}p{12.1cm}@{}}
+}
+%
+\newcommand{\etabt}{
+     \end{tabular}
+     \vspace{1mm}\hrule\vspace{5mm}
+}
+%
+\newcommand{\btabb}{\vfill\vfill
+  \vspace{1mm}\hrule\vspace{2mm}
+  \normalsize\noindent
+  \begin{tabular}{@{}p{5.5cm}@{~}p{10.4cm}@{}}
+}
+%
+\newcommand{\etabb}{\end{tabular}}
+%
+\newcommand{\blit}{
+    \vspace*{5mm}%
+    \normalsize
+    \textbf{Literatur:}\vspace*{-2mm}
+    \begin{enumerate}[1.)]%
+	\setlength{\parskip}{0pt}%
+	\setlength{\itemsep}{0pt}
+}
+%
+\newcommand{\elit}{\end{enumerate}}
+
+
+
+\newcommand{\nV}{n.\,V.\xspace}
+\newcommand{\NN}{N.\,N.}
+\newcommand{\zB}{z.\,B.\xspace}
+
+%% Definition von Professoren-Namen
+%
+\newcommand{\Ruzicka}{R{\r u}{\v z}i{\v c}ka}
+
+
+%% einzelne Abteilungen
+%
+\input{Definition/MYDEFS-Abteilungen}
+
+
+
+
+
+%
+%
+%% Definition der Lehrveranstaltungen %%
+%
+\newcommand{\vorlesung}[1]{%
+	\kopfeintrag{Vorlesung}{#1}{#1}
+}
+\newcommand{\praktikum}[1]{%
+	\kopfeintrag{Prakt. \"Ubung zu}{{#1}}{{#1}}
+}
+\newcommand{\praktischeuebung}[1]{%
+	\kopfeintrag{Prakt. \"Ubung zu}{{#1}}{{#1}}
+}
+\newcommand{\proseminar}[1]{%
+	\kopfeintrag{Proseminar}{#1}{#1}
+}
+\newcommand{\seminar}[1]{%
+	\kopfeintrag{Seminar}{#1}{#1}
+}
+\newcommand{\forschungsseminar}[1]{%
+	\kopfeintrag{Forschungsseminar}{#1}{#1}
+}
+\newcommand{\arbeitsgemeinschaft}[1]{%
+	\kopfeintrag{Projektseminar}{#1}{#1}
+}
+\newcommand{\projektseminar}[1]{%
+	\kopfeintrag{Projektseminar}{#1}{#1}
+}
+\newcommand{\oberseminar}[1]{%
+	\kopfeintrag{Oberseminar}{#1}{#1}
+}
+\newcommand{\veranstaltung}[1]{%
+	\kopfeintrag{Veranstaltung}{#1}{#1}
+}
+\newcommand{\kopfeintrag}[3]{%
+    {#1:}&{\Large\bfseries #2}%
+    \fakesubsection{#3}\\[3mm]
+}%#1=Veranstaltung; #2=lfd. Seite; #3: Inhalts-Verz.
+%
+\newcommand{\untertitel}[1]{%
+    & {\large\bfseries (#1)}\\[3mm]
+}
+\newcommand{\leereintrag}[2]{%
+    {#1:}&{\bfseries  #2}\\[3mm]
+}
+\newcommand{\dozent}[1]{%
+    {Dozent:}&{\bfseries  #1}\\[3mm]
+}
+\newcommand{\dozentin}[1]{%
+    {Dozentin:}&{\bfseries  #1}\\[3mm]
+}
+\newcommand{\dozenten}[1]{%
+    {Dozenten:}&{\bfseries  #1}\\[3mm]
+}
+\newcommand{\zeitort}[1]{%
+    {Zeit/Ort:}& {\bfseries  #1}\\[3mm]
+}
+\newcommand{\uebungen}[1]{%
+    {{\"U}bungen:}& {\bfseries  #1}\\[3mm]
+}
+\newcommand{\tutorium}[1]{%
+    {Tutorium:}& {\bfseries  #1}\\[3mm]
+}
+\newcommand{\vorbesprechung}[1]{%
+    {Vorbesprechung:}& {\bfseries  #1}\\[3mm]
+}
+\newcommand{\teilnehmerliste}[1]{%
+    {Teilnehmerliste:}&{#1}\\[3mm]
+}
+\newcommand{\fragestunde}[1]{%
+    {Fragestunde:}&{#1} \\[3mm]
+}
+\newcommand{\webseite}[1]{%
+    {Web-Seite:}&{#1} \\[3mm]
+}
+\newcommand{\artderveranstaltung}[1]{%
+    {Art der Veranstaltung:}&{#1}\\
+}
+\newcommand{\typischessemester}[1]{\relax}
+%    {Typisches Semester:}&{#1}\\} % gestrichen 02.08.2016
+
+\newcommand{\ectspunkte}[1]{%
+    {ECTS-Punkte:}&{#1 Punkte}\\
+}
+%
+\newcommand{\mastermodulrein}[1]{\relax}
+% %ab WS2011/12 {Master-Studiengang:}&{geeignet f\"ur das Modul \emph{Reine Mathematik}}\\}
+\newcommand{\mastermodulangew}[1]{\relax}
+% % %ab WS2011/12 {Master-Studiengang:}&{geeignet f\"ur das Modul \emph{Angewandte Mathematik}}\\}
+\newcommand{\mastermodulreinangew}[1]{\relax}
+% %ab WS2011/12 {Master-Studiengang:}&{geeignet f\"ur die Module \emph{Reine Mathematik} und \emph{Angewandte Mathematik}}\\ }
+
+\newcommand{\studienschwerpunkt}[1]{\relax}
+% % % \newcommand{\studienschwerpunkt}[1]{%
+% % %     {Studienschwerpunkt:}&{#1}\\
+% % % }
+\newcommand{\notwendigevorkenntnisse}[1]{%
+    {Notwendige Vorkenntnisse:}&{#1}\\
+}
+\newcommand{\nuetzlichevorkenntnisse}[1]{%
+    {N{\"u}tzliche Vorkenntnisse:}&{#1}\\
+}
+\newcommand{\pruefungsrelevan}[1]{\relax}%
+%    {Pr{\"u}fungsrelevanz:}&{#1}\\} % gestrichen 02.08.2016
+
+\newcommand{\folgeveranstaltungen}[1]{%
+    {Folgeveranstaltungen:}&{#1}\\
+}
+\newcommand{\zusatzkommentar}[1]{\relax}%
+   %{Kommentar:}&{{#1}}\\} gestrichen 02.08.2016
+%
+\newcommand{\zusatzbemerkung}[1]{%
+   {Bemerkung:}&{{#1}}\\
+}
+\newcommand{\studienpruefungsleistung}{Studien-/Prüfungsleistung: & Die Anforderungen an Studien- und Prüfungsleistungen entnehmen Sie bitte dem aktuellen Modulhandbuch Ihres Studiengangs.\\}
+%
+\newcommand{\studienleistung}[1]{\relax}%
+% {Studienleistung:}&{{#1}}\\} % gestrichen 02.08.2016
+%
+\newcommand{\pruefungsleistung}[1]{\relax}%
+% {Pr{\"u}fungsleistung:}&{{#1}}\\} % gestrichen 02.08.2016
+   
+\newcommand{\sprechstundedozent}[1]{\relax}%
+%     {Sprechstunde Dozent:}&{#1}\\} % gestrichen 02.08.2016
+%
+\newcommand{\sprechstundedozentin}[1]{\relax}%
+%     {Sprechstunde Dozentin:}&{#1}\\} % gestrichen 02.08.2016
+%
+\newcommand{\sprechstundedozenten}[1]{\relax}%
+%     {Sprechstunde Dozenten:}&{#1}\\} % gestrichen 02.08.2016
+%
+\newcommand{\sprechstundeassistent}[1]{\relax}%
+%     {Sprechstunde Assistent:}&{#1}\\} % gestrichen 02.08.2016
+%
+\newcommand{\sprechstundeassistentin}[1]{\relax}%
+%     {Sprechstunde Assistentin:}&{#1}\\} % gestrichen 02.08.2016
+%
+\newcommand{\zusaetzlicherkommentar}[1]{\relax}%
+%     {Kommentar:}&{#1}\\} % gestrichen 02.08.2016
+%
+\newcommand{\zusaetzlichebemerkung}[1]{%
+    {Bemerkung:}&{#1}\\
+}
+\newcommand{\verwendbarkeit}[1]{%
+    {Verwendbarkeit:}&{#1}\\
+}
+\newcommand{\inhalt}[1]{{%
+        {\large\textbf{Inhalt:}}\\[.5ex]%
+         #1}
+}
+\newcommand{\fakesection}[1]{%
+	\phantomsection%
+	\addcontentsline{toc}{section}{#1}%
+}
+\newcommand{\fakesubsection}[1]{\phantomsection%
+	\addcontentsline{toc}{subsection}{#1}%
+}
+
+
+
+
+
+% 
+% 
+% \newcommand{\mastermodulrein}[1]{% %ab WS2011/12
+%     {Master-Studiengang:}&{geeignet f\"ur das Modul \emph{Reine Mathematik}}\\
+% }
+% \newcommand{\mastermodulangew}[1]{% %ab WS2011/12
+%     {Master-Studiengang:}&{geeignet f\"ur das Modul \emph{Angewandte Mathematik}}\\
+% }
+% \newcommand{\mastermodulreinangew}[1]{% %ab WS2011/12
+%     {Master-Studiengang:}&{geeignet f\"ur die Module \emph{Reine Mathematik} und \emph{Angewandte 
+% Mathematik}}\\
+% }
+

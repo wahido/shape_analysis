@@ -1,0 +1,89 @@
+%%----------------------------------------------------------%%
+%% Abteilungsheader setzen!                                 %%
+%% Dazu richtige Zeile aktivieren (d.h. % entfernen) und    %%
+%% andere Zeile auskommentieren (d.h. % am Zeilenanfang     %%
+%% setzen)                                                  %%
+%%                                                          %%
+%%  Bitte \ und folgenden Text nicht entfernen,             %%
+%%  das ist ein LaTeX-Befehl                                %%
+%%  Bitte %% und folgenden Text nicht entfernen,            %%
+%%  das ist eine Erkl"arung des Befehls                     %%
+%%----------------------------------------------------------%%
+
+\ifs     %% Logo der Abt. f"ur Mathematische Stochastik
+
+\btabt
+\newcommand{\seminarlesekurs}[1]{%
+	\kopfeintrag{Seminar/Lesekurs}{#1}{#1}
+}
+\seminarlesekurs{Shape Analysis} 
+\dozent{Philipp Harms}
+\zeitort{Mi 14--16 Uhr, Raum 232, Ernst-Zermelo-Stra\ss{}e~1}
+\vorbesprechung{Mi 17.~Okt.~2018, 14:15 Uhr, selber Ort}
+\teilnehmerliste{Um teilzunehmen, kommen Sie bitte in die Vorbesprechung des Seminars; eine Teilnehmerliste wird nicht vorab ausliegen.} %% Ende teilnehmerliste
+%\fragestunde{wer, Wochentag, Uhrzeit, Raum und Straße}
+\webseite{\url{https://www.stochastik.uni-freiburg.de/lehre/ws-2018-2019/seminar-shapeanalysis-ws-2018-2019/info-seminar-shapeanalysis-ws-2018-2019}}
+\etabt
+
+%%--------------------------------------------------------------%%
+%% Beschreibung des Inhalts der Veranstaltung                   %%
+%% Inhalt in die geschweiften Klammern einfuegen                %%
+%%                                                              %%
+%%  Das Wort  "Inhalt" kommt automatisch                        %%
+%%--------------------------------------------------------------%%
+
+\inhalt{%%
+Shape Analysis beschäftigt sich mit der Modellierung und Analyse von geometrischen Daten. 
+Beispielsweise sind dies Datensätze von Kurven, Flächen und Tensorfeldern aus bildgebenden Verfahren der Medizin, oder Bilddaten mit Tiefeninformation, die von einigen Handykameras bereits mitgeliefert wird. 
+Shape Analysis ist ein interdisziplinäres Forschungsgebiet, welches Methoden und Fragestellungen aus folgenden Gebieten vereint:
+\begin{itemize}
+\item Riemannsche Differentialgeometrie in endlicher und unendlicher Dimension
+\item Statistik, Stochastik und Machine Learning auf Mannigfaltigkeiten
+\item Anwendungen in Computational Anatomy, Computergrafik, Anthropologie und weiteren Gebieten mit nichtlinearen hochdimensionalen Daten
+\end{itemize}
+Die Themen des Seminars werden je nach Vorwissen und Interesse ausgewählt. 
+Geplant ist eine Einführung in differentialgeometrische Aspekte von Shape Analysis, gefolgt von individuellen Einheiten zu angewandteren Themen.
+}   %% Klammer bitte stehen lassen, Ende von \inhalt{
+
+
+%%--------------------------------------------------------------%%
+%% Literaturverzeichnis zur Veranstaltung                       %%
+%% Inhalt hinter `\item' in die geschweiften Klammern einf"ugen.%% 
+%% Weiterer Eintrag durch `\item{xxx}' in neuer Zeile           %%
+%%--------------------------------------------------------------%%
+%% Das Wort "Literatur" erscheint automatisch                   %%
+%%------------------------------------------------------------- %%
+%% !! Von dieser Literatur sollte in der Bibliothek mehr     !! %%
+%% !! als ein Exemplar vorhanden sein, damit sie f\"ur den     !! %%
+%% !! Semesterapparat gesperrt werden kann!!!                !! %%
+%%--------------------------------------------------------------%%
+
+%\blit
+%
+%\elit
+
+%%--------------------------------------------------------------%%
+%% Fusszeilen mit zus"atzlichen Infos zur Veranstaltung         %%
+%%--------------------------------------------------------------%%
+%% Inhalt bitte in die geschweiften Klammern einfuegen          %%
+%%                                                              %%
+%% Die Worte "Typisches Semester", "Punkte",                    %%
+%% "Nuetzliche Vorkenntnisse", "Sprechstunde Dozent(in)" etc.   %%
+%% erscheinen automatisch                                       %%
+%%--------------------------------------------------------------%%
+
+
+\btabb
+%
+%\ectspunkte{9} % !! das Wort "Punkte" kommt automatisch; bitte ECTS-Punkte angeben
+%\typischessemester{ab dem 2. Semester im Master}
+%\verwendbarkeit{ \textcolor{red}{--- Bitte ausw\"ahlen: ---} Angewandte Mathematik; Reine Mathematik; Kategorie II; Kategorie III }%
+\notwendigevorkenntnisse{Elementare Differentialgeometrie}
+%\nuetzlichevorkenntnisse{ --- Bitte angeben oder auskommentieren --- }
+%\folgeveranstaltungen{ --- Bitte angeben oder auskommentieren --- }
+\studienpruefungsleistung % !! stehen lassen !!
+%\zusatzbemerkung{ --- Bitte angeben oder auskommentieren --- }
+%
+%
+\etabb
+\clearpage

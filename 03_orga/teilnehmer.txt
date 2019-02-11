@@ -1,0 +1,35 @@
+####################
+#                  #
+#  SHAPE ANALYSIS  #
+#		   #
+####################
+
+Seminar: WS 2018/2019
+
+Dozent: Philipp Harms
+Assistent: Wahid Khosrawi
+
+
+
+Teilnehmer:
+
+Dario Kieffer <dariokieffer@hotmail.de>
+Charlotte Kindermann <char.kindermann@gmail.com>
+Johannes Müller <johannescmu@aol.de>
+Melina Willems <m.l.willems@web.de>
+Jasper Hoffmann <jasperhoffmann@posteo.de>
+Stefan Schlager <stefan.schlager@anthropologie.uni-freiburg.de>
+Wahid Khosrawi-Sardroudi <wahid.khosrawi@stochastik.uni-freiburg.de>
+Matthew Reimherr <mreimherr@psu.edu>
+
+##  Website ##
+
+https://www.stochastik.uni-freiburg.de/lehre/ws-2018-2019/seminar-shapeanalysis-ws-2018-2019/info-seminar-shapeanalysis-ws-2018-2019
+
+## Termine, Literatur ##
+
+Siehe Website.
+
+Short notes: https://lindseykitchell.weebly.com/blog/shape-analysis-lecture-1
+
+	

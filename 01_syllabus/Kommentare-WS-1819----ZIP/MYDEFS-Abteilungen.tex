@@ -1,0 +1,171 @@
+
+%% Definition Uni-Logo und Linie darunter
+%
+\newcommand{\UniLogo}{%
+\raisebox{-1.0cm}{%
+\fboxsep0pt%
+\hyperlink{IHV}{%
+\includegraphics[viewport= 0 0 145 175,height=2.7cm]{L-ALU-ab-2009-farbig}}}
+\\[-1.25cm]
+\rule{13.5cm}{2pt}}%
+%
+\newcommand{\UniLogoFront}{%
+\raisebox{-1.8cm}{%
+\fboxsep0pt{%
+%\includegraphics[viewport= 0 0 2430 2880,height=4.7cm]{L-ALU}}}
+\includegraphics[viewport= 0 0 243 288,height=4.7cm]{L-ALU-ab-2009-farbig}}}
+\\[-1.6cm]
+\rule{12.0cm}{3pt}}
+%
+\newcommand{\UniLogoMathFak}{%
+\raisebox{-1.0cm}{%
+\fboxsep0pt%
+\hyperlink{IHV}{%
+\includegraphics[viewport= 0 0 145 175,height=2.7cm]{L-ALU-ab-2009-farbig}}}
+\\[-.95cm]
+\rule{13.5cm}{2pt}}%
+
+
+%% Definition der Koepfe %%
+%
+\newcommand{\newllogo}[5]{\expandafter\newcommand\csname#1\endcsname{{%
+#2%
+\begin{minipage}[b]{#3}%
+\large\textbf{\textsf{#4}\mbox{}}
+\end{minipage} \hfill %
+\Semester\qquad#5\vspace{10mm}}}
+}
+%
+\newcommand{\newlogo}[4]{\newllogo{#1}{#2}{#3}{#4}{\UniLogo}}
+\newcommand{\newmlogo}[4]{\newllogo{#1}{#2}{#3}{#4}{\UniLogoMathFak}}
+
+% Abteilung f"ur Angewandte Mathematik (\iam)
+\newlogo{iam}{%
+\includegraphics[height=1.5cm]{L-AM}\vspace{2ex}
+\hspace*{1.3cm} % <- Dieses Leerzeichen ist notwendig...
+}{5cm}{Abteilung f{\"u}r\\Angewandte Mathematik\\[-0.7em]}
+%
+% Abteilung f"ur Mathematische Logik (\ifl)
+\newlogo{ifl}{%
+\includegraphics[height=1.5cm]{L-Logik}\vspace{2ex}
+\hspace*{2.3cm} % <- hier auch...
+}{4.5cm}{Abteilung f{\"u}r\\ Mathematische Logik\\[-.7em]}
+%
+% Abteilung f"ur Mathematische Stochastik (\ifs)
+\newlogo{ifs}{%
+\includegraphics[height=1.5cm]{L-MS}\vspace{2ex}
+\hfill
+}{3cm}{}
+%
+% Abteilung f{\"u}r Reine Mathematik (\mai)
+\newlogo{mai}{%
+\rule{0pt}{1.5cm}\vspace{2ex}%
+}{5cm}{%
+Abteilung f{\"u}r\\ Reine Mathematik\\[-.7em]}
+%
+% Abteilung f{\"u}r Didaktik der Mathematik (\mad)
+\newlogo{mad}{%
+\rule{0pt}{1.5cm}\vspace{2ex}%
+}{5cm}{%
+Abteilung f{\"u}r\\Didaktik der Mathematik\\[-0.7em]}
+%
+% Didaktik -- PH Freiburg (madph)
+\newlogo{madph}{%
+\includegraphics[height=1.6cm]{Definition/L-PH}\hspace{3.0cm}\includegraphics[height=1.5cm]{Definition/L-PH-FACE}\vspace{2ex}%
+}{1cm}{%
+\\[-0.7em]}
+%
+% Abteilung f{\"u}r Finanzmathematik (\fin)
+\newlogo{fin}{%
+\rule{0pt}{1.5cm}\vspace{2ex}%
+}{5cm}{%
+Abteilung f{\"u}r\\Finanzmathematik\\[-0.7em]}
+%
+% Abteilung f{\"u}r Quantitative Finanzmarktforschung (\qff)
+\newlogo{qff}{%
+\rule{0pt}{1.5cm}%
+\vspace{2ex}%
+% \hspace*{4.0cm}%
+}{7.5cm}{%
+Abteilung f{\"u}r\\Quantitative Finanzmarktforschung\\[-0.7em]}
+%
+% Abteilung Medizinische Biometrie und Statistik am
+% Institut f"ur Med. Biometrie und Med. Informatik (\imb)
+\newlogo{imb}{%
+\includegraphics[height=1.5cm]{L-imbi}\vspace{2ex}%
+\hfill%
+}{5.6cm}{%
+Institut f{\"u}r\\Medizinische Biometrie und\\
+Statistik\\[-0.7em]}
+%
+% Computer Vision Group (\cvg)
+\newlogo{cvg}{%
+\raisebox{0.8ex}{\includegraphics[height=.5cm]{Definition/L-Vision-2}}\vspace{2ex}
+\hspace*{1.3cm} % <- Dieses Leerzeichen ist notwendig...
+}{5cm}{Computer Vision Group\\[-0.7em]}
+%
+% Vorsitzender Pruefungsausschuesse (\pruef)
+\newmlogo{pruef}{}{10cm}{%
+Mathematisches Institut\\
+Vorsitzender der 
+Pr\"ufungsaussch\"usse Mathematik\\
+Prof. Dr. S. Goette\\[-.7em]}
+%
+%
+
+% Math. Inst. (\minst)
+\newlogo{minst}{%
+\rule{0pt}{1.5cm}\vspace{2ex}%
+}{5cm}{%
+Mathematisches Institut\\[-.7em]}
+%
+
+% Mathematisches Institut (\fak)
+\newmlogo{fak}{}{5cm}{%
+Mathematisches Institut\\[-.7em]}
+%
+% Mathematische und Physikalische Fakult"at (\mfak)
+\newlogo{mfak}{%
+\rule{0pt}{2.5cm}%
+}{6.3cm}{%
+\begin{center}%
+Fakult\"at f\"ur\\%
+Mathematik und Physik\\%
+Mathematisches Institut\\%
+\end{center}}
+%
+% Leere Kopfzeile mit Unilogo   (\leer)
+\newmlogo{leer}{%
+\rule{0pt}{1.5cm}%
+}{10cm}{%
+\phantom{Leer g}\\[-.5em]}
+
+
+%% Definition der Sprechstundenseite %%
+%
+\newcommand{\Sprechstunden}{%
+\fak \\ %
+\bigskip\bigskip
+{\renewcommand{\baselinestretch}{2.0}\tiny\large
+
+\textbf{\Large Sprechstundenverzeichnis}\\[4ex]
+Bitte informieren Sie sich \"uber die aktuell g\"ultigen Sprechstunden\\[2ex] der Professorinnen, der Professoren und Assistent(inn)en auf der Internet-Seite\\[4ex]
+\url{http://home.mathematik.uni-freiburg.de/personen/list/sprechstunden.de.html}.}
+}
+
+
+%% Definition des Impressums %%
+%
+\newcommand{\impressum}{%
+\thispagestyle{empty}%
+\fakesection{Impressum}%
+~\vfill
+\hyperlink{IHV}{\textbf{Impressum}}\\[2ex]
+Herausgeber: \\[1ex]
+Mathematisches Institut \\
+Eckerstr. 1\\
+79104 Freiburg\\
+Tel.: 0761-203-5534\\
+E-Mail: institut@math.uni-freiburg.de
+}
+%

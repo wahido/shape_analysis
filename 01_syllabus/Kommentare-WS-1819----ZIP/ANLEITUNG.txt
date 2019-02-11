@@ -1,0 +1,128 @@
+
+
+
+
+
+Bitte beachten:
+
+
+
+Eine Bitte an die Nutzer _*_ohne_*_ LaTeX: 
+
+-- lassen Sie backslash-Zeichen (\) und doppelte Prozent-Zeichen (%%-) stehen 
+-- loeschen Sie keine Klammern
+
+Falls es Ihnen unmoeglich ist, die Tex-Files zu bearbeiten, (aber nur dann) 
+schicken Sie mir (htb@stochastik.uni-freiburg.de) bitte die einzufuegenden 
+Texte in geeigneter Form entsprechend dem Muster in 
+
+       ws1617-1b-NameDozent-TitelVeranst.tex
+   =   <akad.Sem.>-<typ-veranst>-<dozent>-<titel-veranst>.tex
+
+       SS18-1b-NameDozent-TitelVeranst.tex
+   =   <akad.Sem.>-<typ-veranst>-<dozent>-<titel-veranst>.tex
+
+Fuer die einfachere Zuordnung Ihres Kommentars zur korrekten Gruppe
+des kommentierten Vorlesungsverzeichnisses bittet Frau Hattenbach
+darum, dass nach dem akademischen Semester eine Kombination von Zahl 
+und Buchstabe fuer den Typ der Veranstaltung verwendet wird:
+ 
+                1a: Anfaengervorlesung (keine Kommentare)
+                1b: Vorlesung (Pflicht Bachelor, LA)
+                1c: Vorlesung (4std. Spezial)
+                1d: Vorlesung (2std. Spezial)
+                1e: Lehrexport ....... (keine Kommentare)
+  
+                2b: Fachdidaktik
+                2c: Praktische Uebungen
+  
+                3a: Proseminar
+                3b: Seminar
+  
+                4a: Oberseminar ...... (keine Kommentare)
+                4b: Projektseminar .....(Kommentar wenn gewuenscht)
+                4c: Kolloquien und weitere Veranstaltungen
+
+
+
+
+___ fuer alle Nutzer:____
+
+
+Kontrollieren Sie bitte, ob die von Ihnen angegebene Web-Seite auch von
+Uni-fremden Rechnern aus zugaenglich ist.
+
+
+
+Gehen Sie zur Erstellung der Veranstaltungskommentare wie folgt vor:
+
+1. Schritt:
+	- Bearbeiten und ausfuellen der Datei 'veransta.tex'
+	- Hinweise finden Sie in der Dateivorlage
+	- Eine beispielhaft ausgefuellte Datei findet sich in
+	  'beispiel.tex'
+
+2. Schritt:
+	- Uebersetzen Sie das File durch Eingabe von
+	  'pdflatex kommenta.tex'
+           gegebenenfalls den Dateinamen im include-Befehl aendern
+	- Schauen Sie sich das Ergebnis in kommenta.pdf an
+	- Aendern, bzw. ergaenzen Sie Ihre Vorlage 'veransta.tex',
+	  und fuehren Sie Schritt 2 erneut aus, bis Sie mit dem
+	  Resultat zufrieden sind
+
+3. Schritt:
+	- Aendern Sie den Namen der Datei 'veransta.tex' um in
+
+	  <akad.Sem.>-<typ-veranst>-<dozent>-<titel-veranst>.tex
+
+
+          <akad.Sem.> ist bei Ihnen durch das akademische Semester zu ersetzen,
+                      also z.B. ws1718
+                      oder      ss18 
+
+          <typ-veranst> ist bei Ihnen durch die folgende Kombination von Ziffer
+                        und Buchstabe zu ersetzen:
+  
+                1a: Anfaengervorlesung (keine Kommentare)
+                1b: Vorlesung (Pflicht Bachelor, LA)
+                1c: Vorlesung (4std. Spezial)
+                1d: Vorlesung (2std. Spezial)
+                1e: Lehrexport ....... (keine Kommentare)
+  
+                2b: Fachdidaktik
+                2c: Praktische Uebungen
+  
+                3a: Proseminar
+                3b: Seminar
+  
+                4a: Oberseminar ...... (keine Kommentare)
+                4b: Projektseminar .....(Kommentar wenn gewuenscht)
+                4c: Kolloquien und weitere Veranstaltungen
+
+          <dozent> ist durch den jeweiligen Namen zu ersetzen
+
+          <titel-veranst> ist durch einen sinnvoll abgekuerzten Veranstaltungs-
+                          Namen zu ersetzen
+
+	-  Beispiel:
+           Fuer die Vorlesung Algebra von Herrn Mustermann im WS 2017/2018
+		'ws1718-1b-Mustermann-Algebra.tex'
+           oder die Vorlesung von Frau Mustermann ueber Mathematik im SS 2018
+                 'ss18-1c-Mustermann-Mathematik.tex'
+
+ 
+	
+4. Schritt:
+	- Schicken Sie die so erzeugte Datei 
+	  (z.B. 'ws1718-1b-Mustermann-Algebra.tex' oder 
+                'ss18-4b-Musterfrau-DGL.tex')
+	  per E-Mail an Frau Hattenbach 'htb@stochastik.uni-freiburg.de'
+
+5. Schritt:
+	- Gehen Sie fuer weitere Veranstaltungen analog zu den Schritten
+	  1 bis 4 vor.
+
+6. Bitte veraendern Sie auf keinen Fall das File 'MYDEFS.tex'!!
+
+
